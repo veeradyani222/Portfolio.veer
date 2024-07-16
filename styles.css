@@ -473,6 +473,10 @@ nav ul ::before {
         margin-top: 5vh;
 
     }
+    .myimg img{
+        height: 50vh;
+        width: 80vw;
+    }
 
 
 }
