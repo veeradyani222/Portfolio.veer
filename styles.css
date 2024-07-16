@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
+.PrimaryContainer { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.PrimaryContainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  
+}
+.headingbox{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.heading {
+    color: whitesmoke;
+    font-family: "Oswald", serif;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 800;
+    text-shadow: 5px 10px 20px rgba(255, 255, 255, 0.5);
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+    padding: 1vw;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7vh;
+    width: 100%;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+
+nav ul  {
+    display: flex;
+    list-style-type: none;
+    color: whitesmoke;
+    flex-direction: row;
+    font-family: "Poppins", serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 800;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    /* text-shadow: 5px 10px 20px rgba(255, 255, 255, 0.5); */
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    gap: 5vw;
+}
+
+nav ul li{ transition: all 0.3s;}
+
+nav  li:hover {
+    color: rgb(190, 141, 190);
+}
+
+nav ul ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-180deg);
+    animation: shine 10s ;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.aboutSec, .skillsSec, .expSec , .projectsSec{
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border: 2px solid white;
+    
+}
+
+
+.about, .exp, .skills, .projects {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.5);
+    font-size: 7vh;
+    font-weight: 800;
+    font-family: "poppins",serif;
+    background-color: black;
+    border-bottom: 2px solid white;
+
+    width: 100%;
+}
+
+.aboutText , .skillText , .iconText , .nextPrev , .connect h1 {
+    font-size: 3.5vh;
+    font-weight: 500;
+    font-family: "poppins",serif;
+    color: azure;
+    padding: 2vw;
+}
+
+
+.expSec .head{
+    color: aliceblue;
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.5);
+    font-size: 3.5vh;
+    font-weight: 800;
+    font-family: "poppins",serif;
+    margin-top: 3vh;
+}
+
+
+.expSec ul li{
+    font-size: 3.5vh;
+    font-weight: 500;
+    font-family: "poppins",serif;
+    color: azure;
+    padding: 1vh;
+}
+
+.exp{
+    margin-bottom: 10vh;
+}
+
+.expSec ul{
+    margin-top: 5vh;
+    list-style-type: none;
+    
+}
+
+.skillsSec i{
+    color: rgb(187, 227, 9);
+    text-shadow: 5px 5px 20px rgba(255, 255, 255, 0.5);
+    font-size: 10vh;
+    font-weight: 800;
+    
+    margin-top: 3vh;
+}
+.nextPrev{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+   width: 70%;
+   /* other styles in the texts classes */
+   font-size: 7vh;
+
+}
+
+.nextProject , .prevProject{
+    background:linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); 
+  border-radius: 20%;
+    padding: 0 4vh;
+    cursor: pointer;
+}
+
+.projectHead{
+    color: #4aff9f;
+    font-family: "Oswald", serif;
+    text-align: center;
+    font-size: 7vh;
+    font-weight: 800;
+   text-shadow: 1px 1px 7px rgba(74, 255, 159,0.5);
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+    padding: 1vw;
+
+}
+
+
+
+.projectLinks a{
+
+    color: #4aff9f;
+    font-family: "Oswald", serif;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 800;
+    text-decoration: none;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); 
+   text-shadow: 1px 1px 7px rgba(74, 255, 159,0.5);
+   padding: 0vh 4vh ;
+  
+   
+   
+     
+    
+}
+
+.pLink, .gitLink{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pLink:hover , .gitLink:hover{
+    transform: scale(1.05);
+}
+
+.projectText {  font-size: 3vh;
+    font-weight: 500;
+    font-family: "poppins",serif;
+    color: azure;
+    padding: 2vw;}
+
+    .connect a{
+        font-size: 10vh;
+    font-weight: 500;
+    font-family: "poppins",serif;
+    color: azure;
+    padding: 2vw;
+    }
+
+    .connect a:hover{
+        color: #4aff9f;
+    }
+
+
+
+
+
