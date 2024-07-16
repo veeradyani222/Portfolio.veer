@@ -245,7 +245,7 @@ nav ul ::before {
     transition: all 0.2s;
 }
 
-.pLink:hover , .gitLink:hover{
+.pLink:hover , .gitLink:hover {
     transform: scale(1.05);
 }
 
@@ -265,6 +265,29 @@ nav ul ::before {
 
     .connect a:hover{
         color: #4aff9f;
+    }
+
+    .resume a {
+        color: #4aff9f;
+        font-family: "Oswald", serif;
+        text-align: center;
+        font-size: 5vh;
+        font-weight: 800;
+        text-decoration: none;
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)); 
+       text-shadow: 1px 1px 7px rgba(74, 255, 159,0.5);
+       padding: 0vh 4vh ;
+       border: 1px solid white;
+       transition: all 0.3s;
+    }
+
+    .resume{
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+    }
+
+    .resume:hover{
+transform: scale(1.05);
     }
 
 
