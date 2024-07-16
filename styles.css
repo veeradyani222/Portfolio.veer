@@ -314,6 +314,8 @@ nav ul ::before {
 
 .myimg{
     margin-top: 15vh;
+}
+.myimg img{
     height: 50vh;
 }
 
@@ -469,6 +471,7 @@ nav ul ::before {
 
     .myimg{
         margin-top: 5vh;
+
     }
 
 
