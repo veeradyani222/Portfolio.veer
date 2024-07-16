@@ -314,11 +314,9 @@ nav ul ::before {
 
 .myimg{
     margin-top: 15vh;
-}
-.myimg img{
     height: 50vh;
- 
 }
+
 @media screen and (max-width:480px) {
 .headingbox{
     display: flex;
