@@ -11,16 +11,6 @@ body {
     background-color:#000000;
 }
 
-.PrimaryContainer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
 
 
 .content {
@@ -207,7 +197,7 @@ nav ul ::before {
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     /* other styles in the texts classes */
     font-size: 7vh;
 
@@ -473,6 +463,27 @@ nav ul ::before {
         height: 50vh;
         width: 80vw;
     }
+
+
+}
+
+@media (max-width: 821px) {
+
+    nav ul {
+        font-size: 2.5vh;
+        flex-wrap: wrap;
+    }
+.heading{
+font-size: 4vh;
+
+}
+
+.projectLinks a {
+
+  font-size: 4vh;
+}
+
+
 
 
 }

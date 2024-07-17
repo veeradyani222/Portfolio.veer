@@ -22,8 +22,8 @@ let projectData=[
     {
         title: "My Portfolio",
         text:"My portfolio is a reflection of my journey as a developer, built using HTML, CSS, and JavaScript. It highlights my skills, projects, and achievements while providing a visually appealing and user-friendly interface. Each section is crafted to showcase my expertise and creativity, making it easy for visitors to explore my work.",
-        pLink:" ",
-        gitLink:"",
+        pLink:"#",
+        gitLink:"https://github.com/veeradyani222/Portfolio.veer",
 
 
     }
