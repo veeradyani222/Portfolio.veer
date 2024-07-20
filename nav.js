@@ -40,5 +40,8 @@ function navElements(){
         resumeDownload.scrollIntoView({behavior:"smooth"});
     })
 }
-navElements()
+document.addEventListener("DOMContentLoaded", () => {
+    navElements();
+});
+
 
