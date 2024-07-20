@@ -76,7 +76,7 @@ nav ul li {
 }
 
 nav li:hover {
-    color: rgb(190, 141, 190);
+    color: #4aff9f;
 }
 
 nav ul ::before {
@@ -88,7 +88,8 @@ nav ul ::before {
     height: 100%;
     background: linear-gradient(45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
     transform: skewX(-180deg);
-    animation: shine 10s;
+    animation: shine 10s infinite linear;
+    pointer-events: none; /* Prevents the animation from capturing clicks */
 }
 
 @keyframes shine {
@@ -138,7 +139,6 @@ nav ul ::before {
     font-family: "poppins", serif;
     background-color: black;
     border-bottom: 2px solid white;
-
     width: 100%;
 }
 
