@@ -15,27 +15,30 @@ const resumeDownload=document.querySelector(".resume");
 
 
 
-about.addEventListener("click",()=>{
-    aboutSec.scrollIntoView({behavior:"smooth"});
-})
-
-skills.addEventListener("click",()=>{
-    skillsSec.scrollIntoView({behavior:"smooth"});
-})
-
-projects.addEventListener("click",()=>{
-    projectsSec.scrollIntoView({behavior:"smooth"});
-})
-
-experience.addEventListener("click",()=>{
-    expSec.scrollIntoView({behavior:"smooth"});
-})
-
-connectNav.addEventListener("click",()=>{
-    connectBody.scrollIntoView({behavior:"smooth"});
-})
-
-resume.addEventListener("click",()=>{
-    resumeDownload.scrollIntoView({behavior:"smooth"});
-})
+function navElements(){
+    about.addEventListener("click",()=>{
+        aboutSec.scrollIntoView({behavior:"smooth"});
+    })
+    
+    skills.addEventListener("click",()=>{
+        skillsSec.scrollIntoView({behavior:"smooth"});
+    })
+    
+    projects.addEventListener("click",()=>{
+        projectsSec.scrollIntoView({behavior:"smooth"});
+    })
+    
+    experience.addEventListener("click",()=>{
+        expSec.scrollIntoView({behavior:"smooth"});
+    })
+    
+    connectNav.addEventListener("click",()=>{
+        connectBody.scrollIntoView({behavior:"smooth"});
+    })
+    
+    resume.addEventListener("click",()=>{
+        resumeDownload.scrollIntoView({behavior:"smooth"});
+    })
+}
+navElements()
 
