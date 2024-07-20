@@ -467,7 +467,7 @@ nav ul ::before {
 
 }
 
-@media (max-width: 821px) {
+@media screen and (max-width: 821px) and (min-width:481px)  {
 
     nav ul {
         font-size: 2.5vh;
